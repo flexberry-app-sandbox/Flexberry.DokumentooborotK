@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "АвПользователи",
+      "projection": "АвПользователиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Форма документа",
+  "name": "IISDokumentooborotKФормаДокументаE",
+  "className": "ФормаДокументаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-форма-документа",
+      "modelProjection": "ФормаДокументаE"
+    }
+  ]
+}

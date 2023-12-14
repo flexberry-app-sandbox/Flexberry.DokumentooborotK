@@ -1,0 +1,1 @@
+docker-compose -p dokumentooborotk-java up -d

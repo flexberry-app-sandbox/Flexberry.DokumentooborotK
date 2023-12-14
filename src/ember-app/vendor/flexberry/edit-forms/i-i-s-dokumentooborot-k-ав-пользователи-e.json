@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Ав пользователи",
+  "name": "IISDokumentooborotKАвПользователиE",
+  "className": "АвПользователиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-ав-пользователи",
+      "modelProjection": "АвПользователиE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dokumentooborot-k-хр-док-e",
+  "editForm": "i-i-s-dokumentooborot-k-хр-док-e",
+  "external": false,
+  "caption": "Хр док",
+  "name": "IISDokumentooborotKХрДокL",
+  "className": "ХрДокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-хр-док",
+      "modelProjection": "ХрДокL"
+    }
+  ]
+}

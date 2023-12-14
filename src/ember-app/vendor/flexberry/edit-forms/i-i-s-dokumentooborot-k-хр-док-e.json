@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "формаДокумента",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "ТЧСоздДок.ФормаДокумента",
+      "projection": "ФормаДокументаL",
+      "detailModelName": "i-i-s-dokumentooborot-k-т-ч-созд-док"
+    },
+    {
+      "master": "расДок",
+      "displayAttributeName": "дата",
+      "required": true,
+      "relationName": "ТЧУтвержДок.РасДок",
+      "projection": "РасДокL",
+      "detailModelName": "i-i-s-dokumentooborot-k-т-ч-утверж-док"
+    }
+  ],
+  "external": false,
+  "caption": "Хр док",
+  "name": "IISDokumentooborotKХрДокE",
+  "className": "ХрДокE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-хр-док",
+      "modelProjection": "ХрДокE"
+    }
+  ]
+}

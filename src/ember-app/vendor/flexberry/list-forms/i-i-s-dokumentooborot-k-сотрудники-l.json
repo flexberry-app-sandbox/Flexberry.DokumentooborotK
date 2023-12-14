@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dokumentooborot-k-сотрудники-e",
+  "editForm": "i-i-s-dokumentooborot-k-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISDokumentooborotKСотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

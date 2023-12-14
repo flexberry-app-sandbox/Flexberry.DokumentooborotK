@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Dokumentooborot K",
+  "applicationTitle": "Dokumentooborot K",
+  "items": [
+    {
+      "link": null,
+      "menuName": "dokumentooborot-k",
+      "caption": "DokumentooborotK",
+      "title": "DokumentooborotK",
+      "children": [
+        {
+          "link": "i-i-s-dokumentooborot-k-хр-док-l",
+          "menuName": null,
+          "caption": "Хр док",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dokumentooborot-k-ав-пользователи-l",
+          "menuName": null,
+          "caption": "Ав пользователи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dokumentooborot-k-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dokumentooborot-k-вход-в-систему-l",
+          "menuName": null,
+          "caption": "Вход в систему",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dokumentooborot-k-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dokumentooborot-k-форма-документа-l",
+          "menuName": null,
+          "caption": "Форма документа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dokumentooborot-k-рас-док-l",
+          "menuName": null,
+          "caption": "Рас док",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

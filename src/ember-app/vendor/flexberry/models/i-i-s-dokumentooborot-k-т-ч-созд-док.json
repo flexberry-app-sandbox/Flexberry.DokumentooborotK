@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISDokumentooborotKТЧСоздДок",
+  "modelName": "i-i-s-dokumentooborot-k-т-ч-созд-док",
+  "className": "ТЧСоздДок",
+  "nameSpace": "IIS.DokumentooborotK",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формаДокумента",
+      "relatedTo": "i-i-s-dokumentooborot-k-форма-документа",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "хрДок",
+      "relatedTo": "i-i-s-dokumentooborot-k-хр-док",
+      "inverse": "тЧСоздДок"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧСоздДокE",
+      "modelName": "i-i-s-dokumentooborot-k-т-ч-созд-док",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "ФормаДокумента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Форма документа",
+          "name": "формаДокумента",
+          "relatedTo": "i-i-s-dokumentooborot-k-форма-документа",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

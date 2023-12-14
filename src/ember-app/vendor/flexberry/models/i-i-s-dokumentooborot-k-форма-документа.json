@@ -1,0 +1,211 @@
+﻿{
+  "name": "IISDokumentooborotKФормаДокумента",
+  "modelName": "i-i-s-dokumentooborot-k-форма-документа",
+  "className": "ФормаДокумента",
+  "nameSpace": "IIS.DokumentooborotK",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "отделы",
+      "type": "i-i-s-dokumentooborot-k-отделы",
+      "flexberryType": "Отделы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "содержание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "авПользователи",
+      "relatedTo": "i-i-s-dokumentooborot-k-ав-пользователи",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормаДокументаE",
+      "modelName": "i-i-s-dokumentooborot-k-форма-документа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата составления",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование документа",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "содержание",
+          "caption": "Содержание документа",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "отделы",
+          "caption": "Получаемый отдел",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "IDПользователя",
+          "lookupValueField": "iDПользователя",
+          "relationName": "АвПользователи",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "АвПользователи.Сотрудники",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИОСотрудника",
+                  "caption": "Ответственный документа",
+                  "hidden": false,
+                  "index": 2
+                },
+                {
+                  "name": "отделы",
+                  "caption": "Отдел отправителя",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сотрудники",
+              "relatedTo": "i-i-s-dokumentooborot-k-сотрудники",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "ID пользователя",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-dokumentooborot-k-ав-пользователи",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ФормаДокументаL",
+      "modelName": "i-i-s-dokumentooborot-k-форма-документа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата создания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование документа",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "содержание",
+          "caption": "Содержание документа",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "отделы",
+          "caption": "Получаемый отдел",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "АвПользователи",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "АвПользователи.Сотрудники",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИОСотрудника",
+                  "caption": "Ответственный документа",
+                  "hidden": false,
+                  "index": 1
+                },
+                {
+                  "name": "отделы",
+                  "caption": "Отдел отправителя",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сотрудники",
+              "relatedTo": "i-i-s-dokumentooborot-k-сотрудники",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": -1,
+          "type": "default",
+          "caption": "Ответственный документа",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-dokumentooborot-k-ав-пользователи",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

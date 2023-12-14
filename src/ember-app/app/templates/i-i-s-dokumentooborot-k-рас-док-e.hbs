@@ -1,0 +1,84 @@
+<h3 class="ui header">{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-dokumentooborot-k-рас-док-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-dokumentooborot-k-рас-док-e-утверждение="true">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.утверждение-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-dokumentooborot-k-утверждение")
+      value=model.утверждение
+      class=(if (v-get validationModel "утверждение" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "утверждение" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.формаДокумента-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.формаДокумента
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="формаДокумента"
+      projection="ФормаДокументаL"
+      title=(t "forms.i-i-s-dokumentooborot-k-рас-док-e.формаДокумента-caption")
+      readonly=readonly
+      componentName="формаДокументаLookup"
+      class=(if (v-get validationModel "формаДокумента" "isInvalid") "error")
+      data-test-i-i-s-dokumentooborot-k-рас-док-e-формаДокумента=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "формаДокумента" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.авПользователи
+      displayAttributeName="логин"
+      autocomplete=true
+      relationName="авПользователи"
+      projection="АвПользователиL"
+      title=(t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи-caption")
+      readonly=readonly
+      componentName="авПользователиLookup"
+      class=(if (v-get validationModel "авПользователи" "isInvalid") "error")
+      data-test-i-i-s-dokumentooborot-k-рас-док-e-авПользователи=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "авПользователи" "message")}}
+  </div>
+</form>

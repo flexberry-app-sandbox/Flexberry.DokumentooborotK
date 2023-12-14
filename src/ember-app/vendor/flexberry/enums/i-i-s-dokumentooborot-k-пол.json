@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.DokumentooborotK",
+  "className": "Пол",
+  "enumObjects": {
+    "Женский": "Женский",
+    "Мужской": "Мужской"
+  }
+}

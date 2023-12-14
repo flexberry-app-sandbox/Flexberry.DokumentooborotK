@@ -1,0 +1,88 @@
+﻿{
+  "name": "IISDokumentooborotKТЧПользователь",
+  "modelName": "i-i-s-dokumentooborot-k-т-ч-пользователь",
+  "className": "ТЧПользователь",
+  "nameSpace": "IIS.DokumentooborotK",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "авПользователи",
+      "relatedTo": "i-i-s-dokumentooborot-k-ав-пользователи",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "входВСистему",
+      "relatedTo": "i-i-s-dokumentooborot-k-вход-в-систему",
+      "inverse": "тЧПользователь"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПользовательE",
+      "modelName": "i-i-s-dokumentooborot-k-т-ч-пользователь",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "IDПользователя",
+          "lookupValueField": "iDПользователя",
+          "relationName": "АвПользователи",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "АвПользователи.Сотрудники",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИОСотрудника",
+                  "caption": "ФИО сотрудника",
+                  "hidden": false,
+                  "index": 1
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сотрудники",
+              "relatedTo": "i-i-s-dokumentooborot-k-сотрудники",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": true,
+              "index": 2
+            },
+            {
+              "name": "пароль",
+              "caption": "Пароль",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Авторизованные пользователи",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-dokumentooborot-k-ав-пользователи",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

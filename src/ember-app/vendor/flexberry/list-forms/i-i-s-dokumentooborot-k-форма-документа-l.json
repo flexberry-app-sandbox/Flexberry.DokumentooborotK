@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dokumentooborot-k-форма-документа-e",
+  "editForm": "i-i-s-dokumentooborot-k-форма-документа-e",
+  "external": false,
+  "caption": "Форма документа",
+  "name": "IISDokumentooborotKФормаДокументаL",
+  "className": "ФормаДокументаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-форма-документа",
+      "modelProjection": "ФормаДокументаL"
+    }
+  ]
+}

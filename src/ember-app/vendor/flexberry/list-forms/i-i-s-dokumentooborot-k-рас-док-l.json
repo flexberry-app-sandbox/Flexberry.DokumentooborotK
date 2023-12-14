@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dokumentooborot-k-рас-док-e",
+  "editForm": "i-i-s-dokumentooborot-k-рас-док-e",
+  "external": false,
+  "caption": "Рас док",
+  "name": "IISDokumentooborotKРасДокL",
+  "className": "РасДокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-рас-док",
+      "modelProjection": "РасДокL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISDokumentooborotKТЧУтвержДок",
+  "modelName": "i-i-s-dokumentooborot-k-т-ч-утверж-док",
+  "className": "ТЧУтвержДок",
+  "nameSpace": "IIS.DokumentooborotK",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расДок",
+      "relatedTo": "i-i-s-dokumentooborot-k-рас-док",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "хрДок",
+      "relatedTo": "i-i-s-dokumentooborot-k-хр-док",
+      "inverse": "тЧУтвержДок"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧУтвержДокE",
+      "modelName": "i-i-s-dokumentooborot-k-т-ч-утверж-док",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Дата",
+          "lookupValueField": "дата",
+          "relationName": "РасДок",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Рас док",
+          "name": "расДок",
+          "relatedTo": "i-i-s-dokumentooborot-k-рас-док",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
