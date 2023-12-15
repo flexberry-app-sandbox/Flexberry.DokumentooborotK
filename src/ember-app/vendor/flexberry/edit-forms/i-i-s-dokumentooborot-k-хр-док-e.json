@@ -2,7 +2,7 @@
   "propertyLookup": [
     {
       "master": "формаДокумента",
-      "displayAttributeName": null,
+      "displayAttributeName": "наименование",
       "required": true,
       "relationName": "ТЧСоздДок.ФормаДокумента",
       "projection": "ФормаДокументаL",
