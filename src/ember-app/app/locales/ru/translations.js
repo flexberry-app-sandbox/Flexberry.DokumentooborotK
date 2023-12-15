@@ -45,7 +45,7 @@ $.extend(true, translations, {
     'i-i-s-dokumentooborot-k-хр-док': IISDokumentooborotKХрДокModel
   },
 
-  'application-name': 'Dokumentooborot K',
+  'application-name': 'Информация о сотрудниках',
 
   forms: {
     loading: {
@@ -84,7 +84,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Dokumentooborot K',
+        'application-name': 'Информация о сотрудниках',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -95,7 +95,7 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Dokumentooborot K',
+          caption: 'Информация о сотрудниках',
           title: 'Dokumentooborot K'
         },
         'application-version': {
@@ -107,6 +107,54 @@ $.extend(true, translations, {
         index: {
           caption: 'Главная',
           title: ''
+        },
+        'информация-о-сотрудниках': {
+          caption: 'Информация о сотрудниках',
+          title: 'Информация о сотрудниках',
+          'i-i-s-dokumentooborot-k-должность-l': {
+            caption: 'Должность',
+            title: ''
+          },
+          'i-i-s-dokumentooborot-k-сотрудники-l': {
+            caption: 'Сотрудники',
+            title: ''
+          }
+        },
+        'администратору-системы': {
+          caption: 'Администратору системы',
+          title: 'Администратору системы',
+          'i-i-s-dokumentooborot-k-сотрудники-l': {
+            caption: 'Сотрудники',
+            title: 'Сотрудники'
+          },
+          'i-i-s-dokumentooborot-k-ав-пользователи-l': {
+            caption: 'Авторизованные пользователи',
+            title: 'Ав пользователи'
+          }
+        },
+        пользователю: {
+          caption: 'Пользователю',
+          title: 'Пользователю',
+          'i-i-s-dokumentooborot-k-вход-в-систему-l': {
+            caption: 'Вход в систему',
+            title: 'Вход в систему'
+          },
+          документация: {
+            caption: 'Документация',
+            title: 'Документация',
+            'i-i-s-dokumentooborot-k-форма-документа-l': {
+              caption: 'Форма документа',
+              title: 'Форма документа'
+            },
+            'i-i-s-dokumentooborot-k-рас-док-l': {
+              caption: 'Рассмотренный документ',
+              title: 'Рас док'
+            },
+            'i-i-s-dokumentooborot-k-хр-док-l': {
+              caption: 'Хранение документов',
+              title: 'Хр док'
+            }
+          }
         },
         'dokumentooborot-k': {
           caption: 'DokumentooborotK',

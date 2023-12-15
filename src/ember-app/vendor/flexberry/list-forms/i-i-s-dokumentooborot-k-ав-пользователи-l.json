@@ -2,7 +2,7 @@
   "newForm": "i-i-s-dokumentooborot-k-ав-пользователи-e",
   "editForm": "i-i-s-dokumentooborot-k-ав-пользователи-e",
   "external": false,
-  "caption": "Ав пользователи",
+  "caption": "Авторизованные пользователи",
   "name": "IISDokumentooborotKАвПользователиL",
   "className": "АвПользователиL",
   "attrs": [],

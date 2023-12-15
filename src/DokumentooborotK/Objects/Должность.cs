@@ -29,7 +29,7 @@ namespace IIS.DokumentooborotK
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ДолжностьE", new string[] {
-            "IDДолжности as \'I d должности\'",
+            "IDДолжности as \'ID должности\'",
             "Должность as \'Должность\'"})]
     [View("ДолжностьL", new string[] {
             "IDДолжности as \'ID должности\'",

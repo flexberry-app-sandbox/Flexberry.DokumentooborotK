@@ -2,7 +2,7 @@
   "propertyLookup": [
     {
       "master": "формаДокумента",
-      "displayAttributeName": "наименование",
+      "displayAttributeName": null,
       "required": true,
       "relationName": "ТЧСоздДок.ФормаДокумента",
       "projection": "ФормаДокументаL",
@@ -18,7 +18,7 @@
     }
   ],
   "external": false,
-  "caption": "Хр док",
+  "caption": "Хранение документов",
   "name": "IISDokumentooborotKХрДокE",
   "className": "ХрДокE",
   "attrs": [],

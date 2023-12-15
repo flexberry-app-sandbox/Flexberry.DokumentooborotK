@@ -37,14 +37,19 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ХрДокE', 'i-i-s-dokumentooborot-k-хр-док', {
     датаСохранения: attr('Дата сохранения', { index: 0 }),
-    тЧСоздДок: hasMany('i-i-s-dokumentooborot-k-т-ч-созд-док', 'Т ч созд док', {
-      формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', 'Форма документа', {
-        наименование: attr('Наименование', { index: 1, hidden: true })
-      }, { index: 0, displayMemberPath: 'наименование' })
+    тЧСоздДок: hasMany('i-i-s-dokumentooborot-k-т-ч-созд-док', 'Созданные документы', {
+      формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', 'Дата создания', {
+        дата: attr('Дата создания', { index: 0 }),
+        наименование: attr('Наименование документа', { index: 2, hidden: true })
+      }, { index: 1 })
     }),
-    тЧУтвержДок: hasMany('i-i-s-dokumentooborot-k-т-ч-утверж-док', 'Т ч утверж док', {
-      расДок: belongsTo('i-i-s-dokumentooborot-k-рас-док', 'Рас док', {
-        дата: attr('Дата', { index: 1, hidden: true })
+    тЧУтвержДок: hasMany('i-i-s-dokumentooborot-k-т-ч-утверж-док', 'Рассмотренные документы', {
+      расДок: belongsTo('i-i-s-dokumentooborot-k-рас-док', 'Рассмотренный документ', {
+        дата: attr('Дата рассмотрения', { index: 1, hidden: true }),
+        формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', '', {
+          наименование: attr('Наименование документа', { index: 2 })
+        }, { index: -1, hidden: true }),
+        утверждение: attr('Статус решения', { index: 3 })
       }, { index: 0, displayMemberPath: 'дата' })
     })
   });

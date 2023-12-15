@@ -2,7 +2,7 @@
   "newForm": "i-i-s-dokumentooborot-k-рас-док-e",
   "editForm": "i-i-s-dokumentooborot-k-рас-док-e",
   "external": false,
-  "caption": "Рас док",
+  "caption": "Рассмотренный документ",
   "name": "IISDokumentooborotKРасДокL",
   "className": "РасДокL",
   "attrs": [],

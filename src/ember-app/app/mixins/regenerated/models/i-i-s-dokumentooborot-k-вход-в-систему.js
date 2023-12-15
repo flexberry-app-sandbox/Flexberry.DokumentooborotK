@@ -30,7 +30,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ВходВСистемуE', 'i-i-s-dokumentooborot-k-вход-в-систему', {
     датаВхода: attr('Дата входа', { index: 0 }),
     тЧПользователь: hasMany('i-i-s-dokumentooborot-k-т-ч-пользователь', 'Пользователь', {
-      авПользователи: belongsTo('i-i-s-dokumentooborot-k-ав-пользователи', 'Авторизованные пользователи', {
+      авПользователи: belongsTo('i-i-s-dokumentooborot-k-ав-пользователи', 'ID пользователя', {
         сотрудники: belongsTo('i-i-s-dokumentooborot-k-сотрудники', '', {
           фИОСотрудника: attr('ФИО сотрудника', { index: 1 })
         }, { index: -1, hidden: true }),

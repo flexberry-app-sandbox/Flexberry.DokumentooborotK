@@ -4,21 +4,21 @@
       "master": null,
       "displayAttributeName": null,
       "required": false,
-      "relationName": "ФормаДокумента",
-      "projection": "ФормаДокументаL",
+      "relationName": "АвПользователи",
+      "projection": "АвПользователиL",
       "detailModelName": null
     },
     {
       "master": null,
       "displayAttributeName": null,
       "required": false,
-      "relationName": "АвПользователи",
-      "projection": "АвПользователиL",
+      "relationName": "ФормаДокумента",
+      "projection": "ФормаДокументаL",
       "detailModelName": null
     }
   ],
   "external": false,
-  "caption": "Рас док",
+  "caption": "Рассмотренный документ",
   "name": "IISDokumentooborotKРасДокE",
   "className": "РасДокE",
   "attrs": [],

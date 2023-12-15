@@ -35,15 +35,43 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
   </div>
-  <div class="field" data-test-i-i-s-dokumentooborot-k-рас-док-e-утверждение="true">
-    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.утверждение-caption"}}</label>
-    {{flexberry-dropdown
-      items=(flexberry-enum "i-i-s-dokumentooborot-k-утверждение")
-      value=model.утверждение
-      class=(if (v-get validationModel "утверждение" "isInvalid") "error")
+  <div class="field">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.авПользователи
+      displayAttributeName="iDПользователя"
+      autocomplete=true
+      relationName="авПользователи"
+      projection="АвПользователиL"
+      title=(t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи-caption")
       readonly=readonly
+      componentName="авПользователиLookup"
+      class=(if (v-get validationModel "авПользователи" "isInvalid") "error")
+      data-test-i-i-s-dokumentooborot-k-рас-док-e-авПользователи=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "утверждение" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "авПользователи" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.авПользователи.сотрудники.фИОСотрудника
+      class=(if (v-get validationModel.авПользователи.сотрудники "фИОСотрудника" "isInvalid") "error")
+      label=(t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи.сотрудники.фИОСотрудника-caption")
+      data-test-i-i-s-dokumentooborot-k-рас-док-e-авПользователи-сотрудники-фИОСотрудника=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.авПользователи.сотрудники "фИОСотрудника" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-dokumentooborot-k-рас-док-e-авПользователи-сотрудники-отделы="true">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи.сотрудники.отделы-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-dokumentooborot-k-отделы")
+      value=model.авПользователи.сотрудники.отделы
+      class=(if (v-get validationModel.авПользователи.сотрудники "отделы" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.авПользователи.сотрудники "отделы" "message")}}
   </div>
   <div class="field">
     <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.формаДокумента-caption"}}</label>
@@ -64,21 +92,23 @@
     {{flexberry-validationmessage error=(v-get validationModel "формаДокумента" "message")}}
   </div>
   <div class="field">
-    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.авПользователи
-      displayAttributeName="логин"
-      autocomplete=true
-      relationName="авПользователи"
-      projection="АвПользователиL"
-      title=(t "forms.i-i-s-dokumentooborot-k-рас-док-e.авПользователи-caption")
-      readonly=readonly
-      componentName="авПользователиLookup"
-      class=(if (v-get validationModel "авПользователи" "isInvalid") "error")
-      data-test-i-i-s-dokumentooborot-k-рас-док-e-авПользователи=true
+    {{flexberry-field
+      readonly=true
+      value=model.формаДокумента.содержание
+      class=(if (v-get validationModel.формаДокумента "содержание" "isInvalid") "error")
+      label=(t "forms.i-i-s-dokumentooborot-k-рас-док-e.формаДокумента.содержание-caption")
+      data-test-i-i-s-dokumentooborot-k-рас-док-e-формаДокумента-содержание=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "авПользователи" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel.формаДокумента "содержание" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-dokumentooborot-k-рас-док-e-утверждение="true">
+    <label>{{t "forms.i-i-s-dokumentooborot-k-рас-док-e.утверждение-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-dokumentooborot-k-утверждение")
+      value=model.утверждение
+      class=(if (v-get validationModel "утверждение" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "утверждение" "message")}}
   </div>
 </form>

@@ -27,11 +27,12 @@ namespace IIS.DokumentooborotK
 
     // *** End programmer edit section *** (ТЧСоздДок CustomAttributes)
     [AutoAltered()]
-    [Caption("Т ч созд док")]
+    [Caption("Созданные документы")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧСоздДокE", new string[] {
-            "ФормаДокумента as \'Форма документа\'",
-            "ФормаДокумента.Наименование as \'Наименование\'"}, Hidden=new string[] {
+            "ФормаДокумента.Дата as \'Дата создания\'",
+            "ФормаДокумента as \'Наименование документа\'",
+            "ФормаДокумента.Наименование as \'Наименование документа\'"}, Hidden=new string[] {
             "ФормаДокумента.Наименование"})]
     [MasterViewDefineAttribute("ТЧСоздДокE", "ФормаДокумента", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
     public class ТЧСоздДок : ICSSoft.STORMNET.DataObject

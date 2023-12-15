@@ -2,7 +2,7 @@
   "newForm": "i-i-s-dokumentooborot-k-хр-док-e",
   "editForm": "i-i-s-dokumentooborot-k-хр-док-e",
   "external": false,
-  "caption": "Хр док",
+  "caption": "Хранение документов",
   "name": "IISDokumentooborotKХрДокL",
   "className": "ХрДокL",
   "attrs": [],

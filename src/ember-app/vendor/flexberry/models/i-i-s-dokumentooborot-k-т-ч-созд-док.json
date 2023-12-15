@@ -30,22 +30,28 @@
       "attrs": [],
       "belongsTo": [
         {
-          "lookupValue": "Наименование",
-          "lookupValueField": "наименование",
+          "lookupValue": null,
+          "lookupValueField": null,
           "relationName": "ФормаДокумента",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
+              "name": "дата",
+              "caption": "Дата создания",
+              "hidden": false,
+              "index": 0
+            },
+            {
               "name": "наименование",
-              "caption": "Наименование",
+              "caption": "Наименование документа",
               "hidden": true,
-              "index": 1
+              "index": 2
             }
           ],
-          "index": 0,
-          "type": "standard",
-          "caption": "Форма документа",
+          "index": 1,
+          "type": "default",
+          "caption": "Дата создания",
           "name": "формаДокумента",
           "relatedTo": "i-i-s-dokumentooborot-k-форма-документа",
           "inverse": null

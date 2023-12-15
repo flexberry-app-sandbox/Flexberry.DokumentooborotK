@@ -60,7 +60,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('АвПользователиE', 'i-i-s-dokumentooborot-k-ав-пользователи', {
     датаРегистрации: attr('Дата регистрации', { index: 0 }),
     iDПользователя: attr('ID пользователя', { index: 1 }),
-    сотрудники: belongsTo('i-i-s-dokumentooborot-k-сотрудники', 'Сотрудники', {
+    сотрудники: belongsTo('i-i-s-dokumentooborot-k-сотрудники', 'ФИО сотрудника', {
       фИОСотрудника: attr('ФИО сотрудника', { index: 3, hidden: true })
     }, { index: 2, displayMemberPath: 'фИОСотрудника' }),
     логин: attr('Логин', { index: 4 }),

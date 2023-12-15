@@ -27,13 +27,13 @@ namespace IIS.DokumentooborotK
 
     // *** End programmer edit section *** (ХрДок CustomAttributes)
     [AutoAltered()]
-    [Caption("Хр док")]
+    [Caption("Хранение документов")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ХрДокE", new string[] {
             "ДатаСохранения as \'Дата сохранения\'"})]
-    [AssociatedDetailViewAttribute("ХрДокE", "ТЧСоздДок", "ТЧСоздДокE", true, "", "Т ч созд док", true, new string[] {
+    [AssociatedDetailViewAttribute("ХрДокE", "ТЧСоздДок", "ТЧСоздДокE", true, "", "Созданные документы", true, new string[] {
             ""})]
-    [AssociatedDetailViewAttribute("ХрДокE", "ТЧУтвержДок", "ТЧУтвержДокE", true, "", "Т ч утверж док", true, new string[] {
+    [AssociatedDetailViewAttribute("ХрДокE", "ТЧУтвержДок", "ТЧУтвержДокE", true, "", "Рассмотренные документы", true, new string[] {
             ""})]
     [View("ХрДокL", new string[] {
             "ДатаСохранения as \'Дата сохранения\'"})]

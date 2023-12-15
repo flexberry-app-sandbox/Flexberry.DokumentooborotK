@@ -1,38 +1,17 @@
 ﻿{
-  "applicationCaption": "Dokumentooborot K",
+  "applicationCaption": "Информация о сотрудниках",
   "applicationTitle": "Dokumentooborot K",
   "items": [
     {
       "link": null,
-      "menuName": "dokumentooborot-k",
-      "caption": "DokumentooborotK",
-      "title": "DokumentooborotK",
+      "menuName": "информация-о-сотрудниках",
+      "caption": "Информация о сотрудниках",
+      "title": "Информация о сотрудниках",
       "children": [
-        {
-          "link": "i-i-s-dokumentooborot-k-хр-док-l",
-          "menuName": null,
-          "caption": "Хр док",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-dokumentooborot-k-ав-пользователи-l",
-          "menuName": null,
-          "caption": "Ав пользователи",
-          "title": "",
-          "children": null
-        },
         {
           "link": "i-i-s-dokumentooborot-k-должность-l",
           "menuName": null,
           "caption": "Должность",
-          "title": "",
-          "children": null
-        },
-        {
-          "link": "i-i-s-dokumentooborot-k-вход-в-систему-l",
-          "menuName": null,
-          "caption": "Вход в систему",
           "title": "",
           "children": null
         },
@@ -42,20 +21,72 @@
           "caption": "Сотрудники",
           "title": "",
           "children": null
-        },
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "администратору-системы",
+      "caption": "Администратору системы",
+      "title": "Администратору системы",
+      "children": [
         {
-          "link": "i-i-s-dokumentooborot-k-форма-документа-l",
+          "link": "i-i-s-dokumentooborot-k-сотрудники-l",
           "menuName": null,
-          "caption": "Форма документа",
-          "title": "",
+          "caption": "Сотрудники",
+          "title": "Сотрудники",
           "children": null
         },
         {
-          "link": "i-i-s-dokumentooborot-k-рас-док-l",
+          "link": "i-i-s-dokumentooborot-k-ав-пользователи-l",
           "menuName": null,
-          "caption": "Рас док",
-          "title": "",
+          "caption": "Авторизованные пользователи",
+          "title": "Ав пользователи",
           "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "пользователю",
+      "caption": "Пользователю",
+      "title": "Пользователю",
+      "children": [
+        {
+          "link": "i-i-s-dokumentooborot-k-вход-в-систему-l",
+          "menuName": null,
+          "caption": "Вход в систему",
+          "title": "Вход в систему",
+          "children": null
+        },
+        {
+          "link": null,
+          "menuName": "документация",
+          "caption": "Документация",
+          "title": "Документация",
+          "children": [
+            {
+              "link": "i-i-s-dokumentooborot-k-форма-документа-l",
+              "menuName": null,
+              "caption": "Форма документа",
+              "title": "Форма документа",
+              "children": null
+            },
+            {
+              "link": "i-i-s-dokumentooborot-k-рас-док-l",
+              "menuName": null,
+              "caption": "Рассмотренный документ",
+              "title": "Рас док",
+              "children": null
+            },
+            {
+              "link": "i-i-s-dokumentooborot-k-хр-док-l",
+              "menuName": null,
+              "caption": "Хранение документов",
+              "title": "Хр док",
+              "children": null
+            }
+          ]
         }
       ]
     }

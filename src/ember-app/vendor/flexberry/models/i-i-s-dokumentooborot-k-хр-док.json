@@ -45,14 +45,14 @@
       "hasMany": [
         {
           "projectionName": "ТЧСоздДокE",
-          "caption": "Т ч созд док",
+          "caption": "Созданные документы",
           "name": "тЧСоздДок",
           "relatedTo": "i-i-s-dokumentooborot-k-т-ч-созд-док",
           "inverse": null
         },
         {
           "projectionName": "ТЧУтвержДокE",
-          "caption": "Т ч утверж док",
+          "caption": "Рассмотренные документы",
           "name": "тЧУтвержДок",
           "relatedTo": "i-i-s-dokumentooborot-k-т-ч-утверж-док",
           "inverse": null

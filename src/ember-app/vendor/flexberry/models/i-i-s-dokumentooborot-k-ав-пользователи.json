@@ -106,7 +106,7 @@
           ],
           "index": 2,
           "type": "standard",
-          "caption": "Сотрудники",
+          "caption": "ФИО сотрудника",
           "name": "сотрудники",
           "relatedTo": "i-i-s-dokumentooborot-k-сотрудники",
           "inverse": null

@@ -27,11 +27,13 @@ namespace IIS.DokumentooborotK
 
     // *** End programmer edit section *** (ТЧУтвержДок CustomAttributes)
     [AutoAltered()]
-    [Caption("Т ч утверж док")]
+    [Caption("Рассмотренные документы")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧУтвержДокE", new string[] {
-            "РасДок as \'Рас док\'",
-            "РасДок.Дата as \'Дата\'"}, Hidden=new string[] {
+            "РасДок as \'Рассмотренный документ\'",
+            "РасДок.Дата as \'Дата рассмотрения\'",
+            "РасДок.ФормаДокумента.Наименование as \'Наименование документа\'",
+            "РасДок.Утверждение as \'Статус решения\'"}, Hidden=new string[] {
             "РасДок.Дата"})]
     [MasterViewDefineAttribute("ТЧУтвержДокE", "РасДок", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Дата")]
     public class ТЧУтвержДок : ICSSoft.STORMNET.DataObject

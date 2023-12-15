@@ -28,7 +28,7 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТЧПользовательE', 'i-i-s-dokumentooborot-k-т-ч-пользователь', {
-    авПользователи: belongsTo('i-i-s-dokumentooborot-k-ав-пользователи', 'Авторизованные пользователи', {
+    авПользователи: belongsTo('i-i-s-dokumentooborot-k-ав-пользователи', 'ID пользователя', {
       сотрудники: belongsTo('i-i-s-dokumentooborot-k-сотрудники', '', {
         фИОСотрудника: attr('ФИО сотрудника', { index: 1 })
       }, { index: -1, hidden: true }),

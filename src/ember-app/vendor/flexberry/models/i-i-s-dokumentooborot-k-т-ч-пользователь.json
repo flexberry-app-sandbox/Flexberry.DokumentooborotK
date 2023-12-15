@@ -73,7 +73,7 @@
           ],
           "index": 0,
           "type": "standard",
-          "caption": "Авторизованные пользователи",
+          "caption": "ID пользователя",
           "name": "авПользователи",
           "relatedTo": "i-i-s-dokumentooborot-k-ав-пользователи",
           "inverse": null

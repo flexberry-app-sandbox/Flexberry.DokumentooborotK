@@ -44,13 +44,17 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('РасДокE', 'i-i-s-dokumentooborot-k-рас-док', {
     дата: attr('Дата рассмотрения', { index: 0 }),
-    утверждение: attr('Статус ', { index: 1 }),
-    формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', 'Форма документа', {
-      наименование: attr('Наименование', { index: 3, hidden: true })
-    }, { index: 2, displayMemberPath: 'наименование' }),
-    авПользователи: belongsTo('i-i-s-dokumentooborot-k-ав-пользователи', 'Ав пользователи', {
-      логин: attr('Логин', { index: 5, hidden: true })
-    }, { index: 4, displayMemberPath: 'логин' })
+    авПользователи: belongsTo('i-i-s-dokumentooborot-k-ав-пользователи', 'ID пользователя', {
+      сотрудники: belongsTo('i-i-s-dokumentooborot-k-сотрудники', '', {
+        фИОСотрудника: attr('Утверждающее лицо', { index: 2 }),
+        отделы: attr('Утверждающий отдел', { index: 3 })
+      }, { index: -1, hidden: true })
+    }, { index: 1, displayMemberPath: 'iDПользователя' }),
+    формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', 'Наименование документа', {
+      наименование: attr('Наименование документа', { index: 5, hidden: true }),
+      содержание: attr('Описание документа', { index: 6 })
+    }, { index: 4, displayMemberPath: 'наименование' }),
+    утверждение: attr('Статус решения', { index: 7 })
   });
 
   modelClass.defineProjection('РасДокL', 'i-i-s-dokumentooborot-k-рас-док', {
@@ -62,8 +66,9 @@ export let defineProjections = function (modelClass) {
       }, { index: -1, hidden: true })
     }, { index: -1, hidden: true }),
     формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', 'Наименование документа', {
-      наименование: attr('Наименование документа', { index: 3 })
+      наименование: attr('Наименование документа', { index: 3 }),
+      содержание: attr('Описание документа', { index: 4 })
     }, { index: -1, hidden: true }),
-    утверждение: attr('Статус решения', { index: 4 })
+    утверждение: attr('Статус решения', { index: 5 })
   });
 };

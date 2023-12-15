@@ -28,8 +28,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТЧУтвержДокE', 'i-i-s-dokumentooborot-k-т-ч-утверж-док', {
-    расДок: belongsTo('i-i-s-dokumentooborot-k-рас-док', 'Рас док', {
-      дата: attr('Дата', { index: 1, hidden: true })
+    расДок: belongsTo('i-i-s-dokumentooborot-k-рас-док', 'Рассмотренный документ', {
+      дата: attr('Дата рассмотрения', { index: 1, hidden: true }),
+      формаДокумента: belongsTo('i-i-s-dokumentooborot-k-форма-документа', '', {
+        наименование: attr('Наименование документа', { index: 2 })
+      }, { index: -1, hidden: true }),
+      утверждение: attr('Статус решения', { index: 3 })
     }, { index: 0, displayMemberPath: 'дата' })
   });
 };
